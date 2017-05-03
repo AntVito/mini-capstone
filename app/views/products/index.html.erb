@@ -1,2 +1,7 @@
 <h1>Welcome to the Printastic Product Page</h1>
-<%= @products.all %>
+<% @products.each do |product| %>
+<h3>Product Name: <%= product.title %></h3>
+<h3>Product Info: <%= product.info %></h3>
+<h3>Product Price: <%= product.price %></h3>
+<h3>Product Sold by: <%= product.seller %></h3>
+<% end %>
