@@ -3,11 +3,13 @@
 one:
   title: MyString
   info: MyString
-  price: MyString
+  price: 1.5
   seller: MyString
+  pic: MyString
 
 two:
   title: MyString
   info: MyString
-  price: MyString
+  price: 1.5
   seller: MyString
+  pic: MyString

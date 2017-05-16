@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="well"> 
+
+          <h1>Title: <%= @product.title %></h1>
+          <h2>Info: <%= @product.info %></h2>
+          <h2>Price: <%= @product.price %></h2>
+          <h2>Seller: <%= @product.seller %></h2>
+      </div>
+        <div class="container"> 
+          <%= form_tag "/products/#{@product.id}", method: :delete do %>
+            <input type="submit" value="Delete Product">
+          <% end %>
+          <%= form_tag "/products/#{@product.id}/edit", method: :get do %>
+            <input type="submit" value="Update This Product">
+          <% end %>
+        </div>
+      </div>
+    </div>
+</div>
