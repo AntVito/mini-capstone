@@ -56,4 +56,5 @@ class ProductsController < ApplicationController
     flash[:danger] = "Product successfully destroyed"
     redirect_to "/products"
   end
+
 end
